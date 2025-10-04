@@ -10,6 +10,7 @@
         
         <!-- Stylesheets -->
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/contact.css">
     </head>
 
     <!-- Body -->
@@ -33,7 +34,26 @@
 
         <!-- Second section - Main Content -->
         <section id="main-content">
-            <h1>Welcome to My Portfolio</h1>
+            <div class="contact-container">
+                <!-- Contact form for users to get in touch -->
+                <!-- Form can be used to email me at my business email. -->
+                <div class="contact-me-form-container">
+                    <h1 class="form-title">Contact</h1>
+                    <form class="contact-me-form" action="mailto:">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            
             
         </section>
 
