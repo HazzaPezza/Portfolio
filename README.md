@@ -1,6 +1,8 @@
 # Portfolio
 Website for storing all my projects - including this one. To be deployed and hosted online.
 
+I finished my Master's Degree in Computer Science this year and I fear I've not had any time to make any projects or host them and talk about them to friends and employers. I'm comitting to getting this project up and running in some capacity by the end of the year so that I can have something to refer back to and have something to fill into the spot that says 'website here' when applying for roles or experiences going forward. I also want a place where I can host an 'Online Resume' of sorts. 
+
 # Goals
 ## Goal 1 - Static Version
 The aim of goal 1 is to create a good looking front end that works as a standalone website. This version of the site will use just HTML, CSS and JavaScript and should fulfill the following criteria:
