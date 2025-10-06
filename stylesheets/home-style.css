@@ -1,0 +1,108 @@
+/* Global styles */
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+Header Syles -> header -> Title container.
+*/
+#header {
+    display: block;
+    position: fixed;
+    background: #333;
+    width: 100vw;
+    border-bottom: 0.5px solid rgb(218, 218, 218);
+    z-index: 3;
+}
+
+.page-title a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.header-links-container {
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px; 
+}
+
+.selected {
+    background-color: rgba(0, 150, 0, 1);
+}
+
+.header-link:hover {
+    background-color: rgba(0, 100, 0, 1);
+    transition-duration: 0.5s;
+}
+
+
+/*
+Main content -> Entry Content -> Title and Desc. 
+*/
+
+#main-content {
+    background-color: #f0f0f0;
+}
+
+.entry-content {
+    width: 100vw;
+    background: linear-gradient(130deg, rgba(16, 130, 52, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    padding: 100px;
+}
+
+.home-title {
+    padding-top: 150px;
+    font-size: 6rem;
+    color: white;
+    filter: drop-shadow(1px 7px 6px #a9a9a9);
+    margin: 0;
+    z-index: 1;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0;
+    padding: 5px;
+}
+
+/*
+Everything After Entry Content
+*/
+.mid-content {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 75px;
+    padding-bottom: 100px;
+    
+}
+
+.project-section-title {
+    font-size: 3em;
+}
+
+.projects-container {
+    border-top: 0.5px solid black;
+    margin-bottom: 20px;
+}
+
+
+/*
+Footer Styles
+*/
+.footer-content-container {
+    text-align: center;
+    padding: 50px;
+    background: #333;
+    color: white;
+}
