@@ -58,6 +58,7 @@ Main content -> Entry Content -> Title and Desc.
     width: 100vw;
     background: linear-gradient(130deg, rgba(16, 130, 52, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     padding: 100px;
+    border-bottom: 3px solid gray;
 }
 
 .home-title {
@@ -84,7 +85,6 @@ Everything After Entry Content
     margin-right: 5vw;
     margin-top: 75px;
     padding-bottom: 100px;
-    
 }
 
 .project-section-title {
@@ -93,9 +93,15 @@ Everything After Entry Content
 
 .projects-container {
     border-top: 0.5px solid black;
-    margin-bottom: 20px;
 }
 
+.tech-item {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
 
 /*
 Footer Styles
