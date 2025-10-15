@@ -38,7 +38,7 @@
             <!-- FOCUS ON THIS RN -->
             <!-- Entry content has gradient behind, following content has solid background.-->
             <div class="entry-content">
-                <h1 class="home-title">Welcome to My Portfolio</h1>
+                <h1 class="home-title">Harry Perriton</h1>
                 <p class="home-subtitle">I am a Graduate Software Engineer with an MSc in Computer Science from the University of Liverpool.
                 Here you will find out about me, the projects that I've taken part in and how you can contact me for work.</p>
             </div>
@@ -50,8 +50,8 @@
                 <div class="line-break"></div>
 
                 <div class="who-am-i-section">
-                    <h1 class="section-title">👋 Hi, I’m Harry</h1>
-                    <p class="section-subtitle">I am a Computer Science MSc graduate with a passion for creating reliable, efficient, and user-focused software. 
+                    <h1 class="section-title fade-in">Welcome to My Portfolio<br></h1>
+                    <p class="section-subtitle fade-in">I am a Computer Science MSc graduate with a passion for creating reliable, efficient, and user-focused software. 
                         My journey in tech has given me a unique perspective — from ensuring top-tier quality as a QA Tester at PlayStation for two years, 
                         to hands-on technical problem-solving as a Repair Technician at Apple. These experiences have strengthened my attention to detail, 
                         analytical thinking, and commitment to building exceptional digital experiences. I am now focused on advancing my career as a 
@@ -101,6 +101,82 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="projects-container">
+                        <!-- Each project card contains title, description and technologies used plus a relevant image. -->
+                        <div class="project-title-text-container">
+                            <h1 class="project-title"><a href="portfolio.html">SMS Text Classification - Dissertation Project</a></h1>
+                            <p class="project-description">The focus of my MSc Dissertation - classifying SMS text messages using a convolutional neural network. This application
+                                aimed to aid law enforcers and investigators in identifying potential evidence within seized mobile devices. Particularly from their SMS and text
+                                communications saved to the local storage on the device. 
+                            </p>
+                            <p class="project-technologies"><b>Tech-stack:</b><br><br> 
+                                <span class=tech-item>Python3</span> 
+                                <span class=tech-item>TensorFlow</span> 
+                                <span class=tech-item>Keras</span> 
+                                <span class=tech-item>SciKit-Learn</span> 
+                                <span class=tech-item>Pandas</span> 
+                                <span class=tech-item>Numpy</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects-container">
+                        <!-- Each project card contains title, description and technologies used plus a relevant image. -->
+                        <div class="project-title-text-container">
+                            <h1 class="project-title"><a href="portfolio.html">SMS Text Classification - Dissertation Project</a></h1>
+                            <p class="project-description">The focus of my MSc Dissertation - classifying SMS text messages using a convolutional neural network. This application
+                                aimed to aid law enforcers and investigators in identifying potential evidence within seized mobile devices. Particularly from their SMS and text
+                                communications saved to the local storage on the device. 
+                            </p>
+                            <p class="project-technologies"><b>Tech-stack:</b><br><br> 
+                                <span class=tech-item>Python3</span> 
+                                <span class=tech-item>TensorFlow</span> 
+                                <span class=tech-item>Keras</span> 
+                                <span class=tech-item>SciKit-Learn</span> 
+                                <span class=tech-item>Pandas</span> 
+                                <span class=tech-item>Numpy</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects-container">
+                        <!-- Each project card contains title, description and technologies used plus a relevant image. -->
+                        <div class="project-title-text-container">
+                            <h1 class="project-title"><a href="portfolio.html">SMS Text Classification - Dissertation Project</a></h1>
+                            <p class="project-description">The focus of my MSc Dissertation - classifying SMS text messages using a convolutional neural network. This application
+                                aimed to aid law enforcers and investigators in identifying potential evidence within seized mobile devices. Particularly from their SMS and text
+                                communications saved to the local storage on the device. 
+                            </p>
+                            <p class="project-technologies"><b>Tech-stack:</b><br><br> 
+                                <span class=tech-item>Python3</span> 
+                                <span class=tech-item>TensorFlow</span> 
+                                <span class=tech-item>Keras</span> 
+                                <span class=tech-item>SciKit-Learn</span> 
+                                <span class=tech-item>Pandas</span> 
+                                <span class=tech-item>Numpy</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects-container">
+                        <!-- Each project card contains title, description and technologies used plus a relevant image. -->
+                        <div class="project-title-text-container">
+                            <h1 class="project-title"><a href="portfolio.html">SMS Text Classification - Dissertation Project</a></h1>
+                            <p class="project-description">The focus of my MSc Dissertation - classifying SMS text messages using a convolutional neural network. This application
+                                aimed to aid law enforcers and investigators in identifying potential evidence within seized mobile devices. Particularly from their SMS and text
+                                communications saved to the local storage on the device. 
+                            </p>
+                            <p class="project-technologies"><b>Tech-stack:</b><br><br> 
+                                <span class=tech-item>Python3</span> 
+                                <span class=tech-item>TensorFlow</span> 
+                                <span class=tech-item>Keras</span> 
+                                <span class=tech-item>SciKit-Learn</span> 
+                                <span class=tech-item>Pandas</span> 
+                                <span class=tech-item>Numpy</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,9 +185,22 @@
         <section id="footer">
             <div class="footer-content-container">
                 <p>&copy; 2025 Harry Perriton. All rights reserved.</p>
-                <p>hjperriton@gmail.com | 07740312069</p>
             </div>
         </section>
         <script src="" async defer></script>
+        <script>
+
+            let hasShrunk = false;
+            window.addEventListener("scroll", () => {
+            const entry = document.querySelector(".entry-content");
+            const triggerPoint = window.innerHeight * 0.1;
+
+            // Only shrink once
+            if (!hasShrunk && window.scrollY > triggerPoint) {
+                entry.classList.add("shrunk");
+                hasShrunk = true;
+            }
+            });
+        </script>
     </body>
 </html>
