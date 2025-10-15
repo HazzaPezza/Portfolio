@@ -61,12 +61,7 @@
                 </div>
 
                 <div class="projects">
-                    <h1 class="section-title">Projects</h1>
-                    <p class="section-subtitle">As a Computer Science Graduate, I have been focusing on making more and more of my own
-                        projects to counter the stereotype that CS grads don't know how to code for production settings. On this page you will find
-                        a selection of my most recent projects. If you'd like, you can see more on my dedicated Projects Page.</p>
-
-
+                    <h1 class="section-title">Recent Projects</h1>
 
                     <!-- Project 1-->
                     <div class="projects-container">
@@ -112,14 +107,18 @@
             </div>
         </section>
         <script src="" async defer></script>
+        
+        
         <script>
-
+            // Start with the shrunk status being false.
             let hasShrunk = false;
+
+            // Listen for scroll events on the window and add trigger point at 10%.
             window.addEventListener("scroll", () => {
             const entry = document.querySelector(".entry-content");
             const triggerPoint = window.innerHeight * 0.1;
-
-            // Only shrink once
+            
+            // Only shrink once add CSS shrunk class to affected elements.
             if (!hasShrunk && window.scrollY > triggerPoint) {
                 entry.classList.add("shrunk");
                 hasShrunk = true;

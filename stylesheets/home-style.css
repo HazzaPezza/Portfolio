@@ -67,7 +67,7 @@ Main content -> Entry Content -> Title and Desc.
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
     position: relative;
     overflow: hidden;
 }
@@ -127,17 +127,18 @@ Everything After Entry Content
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .section-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: -20px;
     margin-bottom: 50px;
 }
 
 .projects-container {
     border-top: 0.5px solid black;
+    padding-top: 10px;
 }
 
 .project-title a {
@@ -156,6 +157,10 @@ Everything After Entry Content
 .project-description {
     max-width: 1200px;
     font-size: 1.2rem;
+}
+
+.project-technologies {
+    padding-bottom: 10px;
 }
 
 .tech-item {
