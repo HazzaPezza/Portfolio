@@ -73,7 +73,7 @@ Main content -> Entry Content -> Title and Desc.
 }
 
 .entry-content.shrunk {
-  height: 120px; /* or something like 120px */
+  height: 120px;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
@@ -134,6 +134,7 @@ Everything After Entry Content
     font-size: 1.2rem;
     margin-top: -20px;
     margin-bottom: 50px;
+    text-wrap: pretty;
 }
 
 .projects-container {
