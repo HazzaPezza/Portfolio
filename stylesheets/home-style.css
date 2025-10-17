@@ -54,10 +54,6 @@ Main content -> Entry Content -> Title and Desc.
     background-color: #f0f0f0;
 }
 
-
-
-
-
 .entry-content {
     width: 100%;
     height: 100vh;
@@ -67,7 +63,7 @@ Main content -> Entry Content -> Title and Desc.
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.7s ease;
+    transition: all 1s ease;
     position: relative;
     overflow: hidden;
 }
@@ -123,11 +119,11 @@ Everything After Entry Content
 .who-am-i-section {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
 }
 
 .section-title {
     font-size: 2.5rem;
+    margin-top: 100px;
 }
 
 .section-subtitle {
