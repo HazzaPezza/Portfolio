@@ -119,6 +119,18 @@ Tidying up code may help with this.
     width: 50%;
 }
 
+.learn-more-button {
+    text-decoration: none;
+    background-color: rgb(193, 1, 1);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.learn-more-button:hover {
+    background-color: rgb(113, 0, 0);
+    transition: background-color 0.3s ease;
+}
 
 
 
