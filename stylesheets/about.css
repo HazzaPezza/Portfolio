@@ -7,50 +7,23 @@ body {
     margin: 0;
 }
 
-/*
-Header Syles -> header -> Title container.
-*/
-#header {
-    display: block;
-    position: fixed;
-    background: #333;
-    width: 100vw;
-    border-bottom: 0.5px solid rgb(218, 218, 218);
-    z-index: 3;
+.opening-image {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
 }
 
-.page-title a{
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
+.about-title {
+    font-size: 3rem;
+    margin-top: 30px;
 }
 
-.header-links-container {
-    margin-left: 7px;
-    margin-bottom: 10px;
-}
-
-.header-link {
-    text-decoration: none;
-    color: white;
-    padding: 10px; 
-}
-
-.selected {
-    background-color: rgba(0, 150, 0, 1);
-}
-
-.header-link:hover {
-    background-color: rgba(0, 100, 0, 1);
-    transition-duration: 0.5s;
-}
-
-/*
-Footer Styles
-*/
-.footer-content-container {
-    text-align: center;
-    padding: 50px;
-    background: #333;
-    color: white;
+#page-text-and-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
