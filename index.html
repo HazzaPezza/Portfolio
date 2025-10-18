@@ -37,7 +37,7 @@
             <!-- Header Links for navigation -->
             <div class="header-links-container">
                 <a class="header-link selected" href="index.html">Home</a>
-                <a class="header-link" href="about.html">About</a>
+                <a class="header-link" href="#who-am-i">About</a>
                 <a class="header-link" href="projects.html">Projects</a>
                 <a class="header-link" href="contact.html">Contact</a>
             </div>
@@ -60,7 +60,7 @@
                 <!-- Example project entry on display. -->
                 <div class="line-break"></div>
 
-                <div class="who-am-i-section">
+                <div id="who-am-i" class="who-am-i-section">
 
                     <!-- THERES LOADS OF BUGS WITH THIS FUCKING PHOTO OMG -->
                     <div class="entry2">
@@ -225,22 +225,7 @@
         
         
 
-        <!-- Want to compartmentalise this and separate concerns so might move this to separate JS file. -->
-        <script>
-            // Start with the shrunk status being false.
-            let hasShrunk = false;
-
-            // Listen for scroll events on the window and add trigger point at 10%.
-            window.addEventListener("scroll", () => {
-            const entry = document.querySelector(".entry-content");
-            const triggerPoint = window.innerHeight * 0.1;
-            
-            // Only shrink once add CSS shrunk class to affected elements.
-            if (!hasShrunk && window.scrollY > triggerPoint) {
-                entry.classList.add("shrunk");
-                hasShrunk = true;
-            }
-            });
-        </script>
+        <!-- Have this separated now into separate JavaScript file. -->
+        <script src="js/scrollFunc.js" async defer></script>
     </body>
 </html>
