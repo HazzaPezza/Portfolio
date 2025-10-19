@@ -13,8 +13,8 @@ Placeholder image styling
 img {
     max-width: 80%;
     height: auto;
-    border-radius: 400px;
-    margin-top: 50px;
+    border-radius: 50px;
+    margin-top: 100px;
     border: 1px solid gray;
 }
 
@@ -121,14 +121,14 @@ Tidying up code may help with this.
 
 .learn-more-button {
     text-decoration: none;
-    background-color: rgb(193, 1, 1);
+    background-color: rgba(16, 130, 52, 1);
     color: white;
     padding: 15px 25px;
     border-radius: 10px;
 }
 
 .learn-more-button:hover {
-    background-color: rgb(113, 0, 0);
+    background-color: rgb(10, 97, 10);
     transition: background-color 0.3s ease;
 }
 
