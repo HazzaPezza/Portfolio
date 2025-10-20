@@ -24,7 +24,7 @@ Main content -> Entry Content -> Title and Desc.
 #main-content {
   background-color: #f0f0f0;
   opacity: 0.8;
-  background-image: radial-gradient(#a4bc91 0.4px, #f0f0f0 0.4px);
+  background-image: radial-gradient(#a4bc91 0.5px, #f0f0f0 0.8px);
   background-size: 8px 8px;
 }
 
@@ -111,6 +111,14 @@ Everything After Entry Content
   border-radius: 5px;
   filter: drop-shadow(5px 5px 29px #5b5b5b);
   z-index: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.who-am-i-section:hover {
+  transform: translateY(-8px) scale(1.02);
+  filter: drop-shadow(8px 12px 32px rgba(60, 60, 60, 0.7));
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px) scale(1.02) rotateX(2deg);
 }
 
 /*
@@ -185,12 +193,13 @@ Tidying up code may help with this.
 
 .project-technologies {
   padding-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .tech-item {
   background-color: lightgray;
   border-radius: 5px;
-  padding: 3px;
+  padding: 10px;
   margin-right: 5px;
   font-size: 0.9em;
 }
