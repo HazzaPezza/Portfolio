@@ -14,7 +14,6 @@ img {
   max-width: 80%;
   height: auto;
   border-radius: 50px;
-  margin-top: 100px;
   border: 1px solid gray;
 }
 
@@ -38,11 +37,13 @@ Main content -> Entry Content -> Title and Desc.
   border-bottom: 3px solid gray;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: left;
+  justify-content: center;
   transition: all 1s ease;
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 
 .entry-content.shrunk {
@@ -91,14 +92,22 @@ Everything After Entry Content
   padding-bottom: 100px;
 }
 
+.pixelspace {
+    height: 100px;
+    width: 100%;
+}
+
 .who-am-i-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  height: 90vh;
-  margin-top: -90px;
+  background-color: white;
+  padding: 75px;
+  border-radius: 50px;
+  filter: drop-shadow(5px 5px 29px #5b5b5b);
+  z-index: 1;
 }
 
 /*
@@ -112,11 +121,11 @@ Tidying up code may help with this.
 */
 
 .entry1 {
-  width: 50%;
-  min-width: 300px;
+  width: 60%;
+  justify-content: center;
 }
 .entry2 {
-  width: 50%;
+  width: 40%;
 }
 
 .learn-more-button {
@@ -134,7 +143,6 @@ Tidying up code may help with this.
 
 .section-title {
   font-size: 2.5rem;
-  margin-top: 100px;
 }
 
 .section-subtitle {
