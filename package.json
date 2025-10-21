@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-1",
+  "version": "1.0.0",
+  "description": "Website for storing all my projects - including this one. To be deployed and hosted online.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
