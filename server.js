@@ -1,13 +1,21 @@
-// Server basics
+// server.js -
 
-const express = require('express');
+// TUTORIALS FOR EXPRESS SUCK ASS WHY AM I STRUGGLING SO MUCH WITH BASIC SHIT.
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
 const app = express();
-const PORT = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+// Recreate __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.listen(PORT, () => {
-    console.log('Hello world server listening on port ${PORT}')
-});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
