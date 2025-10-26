@@ -10,10 +10,14 @@
 
 // Import express module.
 import express from "express";
+import path from 'path';
 
 // Declare instance of express as server. Declare port number globally.
 const server = express();
 const port = 3000;
+
+// This won't work for ESM. __dirname not supported.
+server.use(express.static(path.join('public')));
 
 // Route for hello, world which is at default route '/'.
 server.get('/', (req, res) => {
