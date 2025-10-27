@@ -37,11 +37,17 @@ Header Syles -> header -> Title container.
 }
 
 /*
-Footer Styles
+Footer Styles.
 */
 .footer-content-container {
     text-align: center;
     padding: 50px;
     background: #333;
     color: white;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px; 
 }

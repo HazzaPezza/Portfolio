@@ -20,7 +20,7 @@ const rootDirectory = import.meta.dirname;
 console.log(typeof(rootDirectory));
 
 // This won't work for ESM. __dirname not supported.
-server.use(express.static(path.join(rootDirectory)));
+server.use(express.static(path.join(rootDirectory, 'public')));
 
 // Route for hello, world which is at default route '/'.
 server.get('/', (req, res) => {
