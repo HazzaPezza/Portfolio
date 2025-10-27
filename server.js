@@ -2,7 +2,7 @@
 // I need to do the following:
 /*
 1. Get the server running (Hello World!) - COMPLETE. 
-2. Get index.html to load.
+2. Get index.html to load. - COMPLETE.
 3. Get the CSS to load with the HTML.
 4. Get routes prepared for all the pages on my page.
 */
@@ -15,13 +15,16 @@ import path from 'path';
 // Declare instance of express as server. Declare port number globally.
 const server = express();
 const port = 3000;
+const rootDirectory = import.meta.dirname;
+
+console.log(typeof(rootDirectory));
 
 // This won't work for ESM. __dirname not supported.
-server.use(express.static(path.join('public')));
+server.use(express.static(path.join(rootDirectory)));
 
 // Route for hello, world which is at default route '/'.
 server.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.sendFile(path.join(rootDirectory, 'public', 'index.html'));
 });
 
 // listen() takes a port number and then listens on that port.
