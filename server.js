@@ -17,9 +17,8 @@ const server = express();
 const port = 3000;
 const rootDirectory = import.meta.dirname;
 
-console.log(typeof(rootDirectory));
-
-// This won't work for ESM. __dirname not supported.
+// Import static files from public directory.
+// Small bug in about page CSS that doesn't load image correctly.
 server.use(express.static(path.join(rootDirectory, 'public')));
 
 // Route for hello, world which is at default route '/'.
