@@ -1,12 +1,12 @@
 // Server.js is going to be my main server file for my backend.
-// I need to do the following:
+// Currently works as a static version of the website.
+
 /*
-1. Get the server running (Hello World!) - COMPLETE. 
-2. Get index.html to load. - COMPLETE.
-3. Get the CSS to load with the HTML - COMPLETE.
-4. Get routes prepared for all the pages on my page.
+TODO: Finish front end development of application. ==================== IN PROCESS
+TODO: Create POSTGRESQL database and connect to it. =================== NOT STARTED
+TODO: Create API endpoints to interact with database. ================= NOT STARTED
+TODO: Containerise application using Docker. ========================== COMPLETE
 */
-// This will be the perfect starting point for my code.
 
 // Import express module.
 import express from "express";
