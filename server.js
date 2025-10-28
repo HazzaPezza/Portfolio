@@ -3,7 +3,7 @@
 /*
 1. Get the server running (Hello World!) - COMPLETE. 
 2. Get index.html to load. - COMPLETE.
-3. Get the CSS to load with the HTML.
+3. Get the CSS to load with the HTML - COMPLETE.
 4. Get routes prepared for all the pages on my page.
 */
 // This will be the perfect starting point for my code.
