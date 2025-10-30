@@ -10,3 +10,30 @@ body {
   height: 100px;
   width: 100%;
 }
+
+.page-title {
+    font-size: 4rem;
+}
+
+.tech {
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1000px;
+}
+
+.marquee .tech {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  animation: marqueeLeft 62s linear infinite;
+}
+
+@keyframes marqueeLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1050px); }
+}
