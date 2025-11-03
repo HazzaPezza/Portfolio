@@ -1,9 +1,16 @@
 * {
     font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+}
+
+main {
+  max-width: 1600px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .pixel-space {
@@ -11,29 +18,66 @@ body {
   width: 100%;
 }
 
-.page-title {
-    font-size: 4rem;
+.project-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.marquee {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .tech {
-  padding: 20px;
+  padding: 10px 15px;
   background-color: lightgray;
   border-radius: 10px;
 }
 
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1000px;
+.github_link {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #0366d6;
 }
 
-.marquee .tech {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  animation: marqueeLeft 62s linear infinite;
+.github_link:hover {
+  text-decoration: underline;
 }
 
-@keyframes marqueeLeft {
-  from { transform: translateX(0); }
-  to { transform: translateX(-1050px); }
+.brief-project-description, .detailed-section-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
+
+.image-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project_image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top-button {
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.back-to-top-button:hover {
+  background-color: #024ea2;
+} 
