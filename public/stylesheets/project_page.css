@@ -25,6 +25,11 @@ main {
   margin: 0;
 }
 
+.date_added {
+  color: gray;
+  font-size: 1rem;
+}
+
 .marquee {
   display: flex;
   flex-wrap: wrap;
