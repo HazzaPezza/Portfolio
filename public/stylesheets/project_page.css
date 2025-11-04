@@ -5,12 +5,14 @@
 
 body {
     margin: 0;
+    background-image: radial-gradient(#a4bc91 0.5px, #f0f0f0 0.8px);
+    background-size: 8px 8px;
 }
 
 main {
   max-width: 1600px;
   margin-left: 10vw;
-  margin-right: 10vw;
+  margin-right: 10vw; 
 }
 
 .pixel-space {
@@ -55,6 +57,10 @@ main {
   margin-bottom: 20px;
 }
 
+.brief-project-description {
+  margin-bottom: 50px;
+}
+
 .image-container {
   text-align: center;
   margin-bottom: 30px;
@@ -68,17 +74,21 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.detailed-section-heading {
+  margin-top: 50px;
+}
+
 .back-to-top-button {
   align-items: center;
   text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #0366d6;
+  background-color: rgba(16, 130, 52, 1);
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .back-to-top-button:hover {
-  background-color: #024ea2;
+  background-color: rgb(10, 97, 10);
 } 
