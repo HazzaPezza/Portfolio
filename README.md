@@ -22,8 +22,7 @@ The database should fulfill the following tasks:
 - Have normalized relationship diagram to ensure good performance / scalability.
 - Be running on a server of some sort - probably a docker / postgreSQL solution.
 
-## Goal 3 - Implementation of a web framework (NodeJS).
-
+## Goal 3 - Implementation of a web framework (NodeJS)
 The aim of goal 3 is to use a web framework such as Express and NodeJS to implement a fully working version of the web application. The idea being that it can become a dynamic version of the static site so that I can use it as a portfolio site going forward. Ideally, this app should follow the following principles:
 
 - At a minimum, web pages should be served by an express server.
