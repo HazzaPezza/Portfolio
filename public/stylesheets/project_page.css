@@ -27,7 +27,8 @@ main {
 
 .date_added {
   color: gray;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .marquee {
@@ -97,3 +98,77 @@ main {
 .back-to-top-button:hover {
   background-color: rgb(10, 97, 10);
 } 
+
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .project-title {
+    font-size: 2.8rem;
+  }
+
+  .date-added {
+    font-size: 1.1rem;
+  }
+
+  .tech {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .github_link {
+    font-size: 1rem;
+  }
+
+  .brief-project-description, .detailed-section-paragraph {
+    font-size: 1rem;
+  }
+
+  .detailed-section-heading {
+    font-size: 1.5rem;
+  }
+
+  .back-to-top-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 399px) {
+  .project-title {
+    font-size: 2.3rem;
+  }
+
+  .project_image {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .pixel-space {
+    height: 90px;
+  }
+
+  .date-added {
+    font-size: 0.5rem;
+  }
+
+  .tech {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .github_link {
+    font-size: 0.9rem;
+  }
+
+  .brief-project-description, .detailed-section-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .detailed-section-heading {
+    font-size: 1.3rem;
+  }
+
+  .back-to-top-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
