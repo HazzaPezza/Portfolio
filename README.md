@@ -6,7 +6,7 @@ I finished my Master's Degree in Computer Science this year and I fear I've not 
 If you're reading the commits on this repository and thinking 'bloody hell why did he make that decision' just know that web development wasn't my highest graded subject. 
 
 # Goals
-## Goal 1 - Static Version (45% Complete)
+## Goal 1 - Static Version (80% Complete)
 The aim of goal 1 is to create a good looking front end that works as a standalone website. This version of the site will use just HTML, CSS and JavaScript and should fulfill the following criteria:
 
 - Be dynamic so that it works at all screen sizes.

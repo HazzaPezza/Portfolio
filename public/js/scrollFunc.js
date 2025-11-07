@@ -1,3 +1,9 @@
+// This JS file contains functions to handle scroll events and are applicable to multiple pages.
+// Rathter than separate scroll animations for home page and extra pages. This covers both.
+
+
+
+// Function to shrink header on scroll.
 function handleScroll() {
   // Start with the shrunk status being false.
   let hasShrunk = false;
@@ -15,14 +21,17 @@ function handleScroll() {
   });
 }
 
+// Call function to handle scroll events.
 handleScroll();
+
+
 
 // Function to make items appear on scoll.
 function appearOnScroll() {
   const faders = document.querySelectorAll(".fade-in");
 
   const appearOptions = {
-    rootmargin: "0px 0px -100px 0px",
+    rootmargin: "0px 0px 000px 0px",
     scrollmargin: "0px 0px -100px 0px",
     threshold: 0.5,
   };
@@ -41,4 +50,5 @@ function appearOnScroll() {
   });
 }
 
+// Call function to make items appear on scroll.
 appearOnScroll();
