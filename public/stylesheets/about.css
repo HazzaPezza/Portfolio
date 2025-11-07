@@ -1,10 +1,25 @@
+/* FADE IN ON SCROLL CSS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Global styles */
 * {
   font-family: "Roboto",sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  background-image: radial-gradient(#a4bc91 0.5px, #f0f0f0 0.8px);
+  background-size: 8px 8px;
 }
 
 .pixel-space {
@@ -22,17 +37,49 @@ body {
   border-bottom: 1px solid gray;
 }
 
-.about-title {
-  font-size: 3rem;
-  margin-top: 30px;
-}
-
 #page-text-and-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1200px;
   min-width: 350px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
+
+.about-title {
+  font-size: 3rem;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.job-listing {
+  margin-bottom: 30px;
+}
+
+.education-listing {
+  margin-top: 20px;
+}
+
+.back-to-top-button {
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(16, 130, 52, 1);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.back-to-top-button:hover {
+  background-color: rgb(10, 97, 10);
+} 
