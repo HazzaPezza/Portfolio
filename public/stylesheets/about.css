@@ -67,6 +67,10 @@ body {
 
 .education-listing {
   margin-top: 20px;
+  background-color: rgba(200, 230, 201, 1);
+  padding: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 10px #737373);
 }
 
 .back-to-top-button {
@@ -83,3 +87,16 @@ body {
 .back-to-top-button:hover {
   background-color: rgb(10, 97, 10);
 } 
+
+
+.listings {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  
+}
+
+.education-title {
+  font-size: 1.2rem;
+}
