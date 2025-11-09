@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1800px;
   min-width: 350px;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -50,7 +50,7 @@ body {
 .about-title {
   font-size: 3rem;
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-top: 70px;
 }
 
@@ -70,7 +70,7 @@ body {
   background-color: rgba(200, 230, 201, 1);
   padding: 30px;
   border-radius: 10px;
-  filter: drop-shadow(5px 5px 10px #737373);
+  filter: drop-shadow(5px 5px 10px #acacac);
 }
 
 .back-to-top-button {
