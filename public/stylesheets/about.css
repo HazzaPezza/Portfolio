@@ -37,14 +37,15 @@ body {
   border-bottom: 1px solid gray;
 }
 
+#main-content {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 #page-text-and-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1800px;
-  min-width: 350px;
-  margin-left: 10vw;
-  margin-right: 10vw;
 }
 
 .about-title {
@@ -74,7 +75,6 @@ body {
 }
 
 .back-to-top-button {
-  align-items: center;
   text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
