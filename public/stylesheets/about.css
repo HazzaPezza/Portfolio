@@ -62,11 +62,13 @@ body {
   margin-bottom: 20px;
 }
 
-.job-listing {
-  margin-bottom: 30px;
+.careeer-history-section {
+  display: flex;
+  flex-wrap: 0;
+  flex-shrink: 0;
 }
 
-.education-listing {
+.education-listing, .job-listing{
   margin-top: 20px;
   background-color: rgba(200, 230, 201, 1);
   padding: 30px;
