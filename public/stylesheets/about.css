@@ -1,4 +1,6 @@
-/* FADE IN ON SCROLL CSS */
+/* 
+FADE IN ON SCROLL CSS 
+*/
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -10,7 +12,10 @@
   transform: translateY(0);
 }
 
-/* Global styles */
+
+/* 
+Global styles 
+*/
 * {
   font-family: "Roboto",sans-serif;
   scroll-behavior: smooth;
@@ -27,6 +32,9 @@ body {
   width: 100%;
 }
 
+/*
+Opening section styling.
+*/
 .opening-image {
   width: 100%;
   height: 450px;
@@ -48,12 +56,17 @@ body {
   justify-content: center;
 }
 
+
+/*
+About section CSS
+*/
 .aboutMe-flexBox {
   display: flex;
+  margin-top: 5vh;
 }
 
 .about-section {
-  padding: 50px;
+  padding: 10px;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -88,20 +101,9 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.careeer-history-section {
-  display: flex;
-  flex-wrap: 0;
-  flex-shrink: 1;
-}
-
-.education-listing, .job-listing{
-  margin-top: 20px;
-  background-color: rgba(200, 230, 201, 1);
-  padding: 30px;
-  border-radius: 10px;
-  filter: drop-shadow(5px 5px 10px #acacac);
-}
-
+/*
+Styling for back to top button.
+*/
 .back-to-top-button {
   text-align: center;
   padding: 10px 20px;
@@ -128,13 +130,16 @@ body {
   font-size: 1.2rem;
 }
 
-.extra-section-for-test {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
+
+
+/* 
+THIS IS FOR THE EDUCATION / CAREER EXPERIENCE SECTION
+*/
+.education-and-career {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
 }
 
 .listing-container {
@@ -142,4 +147,121 @@ body {
   filter: drop-shadow(5px 5px 10px #acacac);
   padding: 20px;
   border-radius: 20px;
+  max-width: 480px;
+}
+
+/* 
+MEDIA QUERIES FOR RESPONSIVENESS OF MAIN ELEMTNS
+Does **NOT** include styling for education / Career cards.
+*/
+@media screen and (max-width: 500px) {
+  .opening-image {
+    height: 200px;
+  }
+  
+  .about-section {
+    padding: 10px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .contact-me-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .back-to-top-button {
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+
+  .listing-title {
+    font-size: 1.3rem;
+  }
+
+  .listing-description {
+    font-size: 0.8rem;
+  }
+  
+  .list-item {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .opening-image {
+    height: 250px;
+  }
+
+  .about-section {
+    padding: 10px;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .contact-me-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+
+  .back-to-top-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .opening-image {
+    height: 250px;
+  }
+  
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+/*
+At this point media queries are just for opening image.
+*/
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .opening-image {
+    height: 275px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+  .opening-image {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .opening-image {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .opening-image {
+    height: 400px;
+  }
 }
