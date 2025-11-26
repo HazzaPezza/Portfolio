@@ -1,15 +1,18 @@
 /* Global styles */
 * {
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    background-image: radial-gradient(#a4bc91 0.5px, #f0f0f0 0.8px);
+    background-size: 8px 8px;
 }
 
 .pixel-space100 {
     width: 100%;
-    height: 168px;
+    height: 100px;
 }
 
 #main-content {
@@ -20,26 +23,87 @@ body {
 #main-content {
     display: flex;
     flex-direction: column;
-    margin-right: 10vh;
-    margin-left: 10vh;
-    border: 5px solid blue;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
-.bento-container {
-    display: flex;
-    justify-content: center;
+.opening-image {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/about_background.jpg");
+  background-size: cover;
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid gray;
+}
+
+.opening-content {
+    padding: 10px;
+}
+
+.project-page-title {
+    font-size: clamp(1rem, 3vw + 1rem, 10rem);
+    margin: 0;
+    margin-top: 4vh;
+}
+
+.project-page-paragraph {
+    font-size: clamp(1rem, 1.3vw, 5rem);
+    margin-bottom: 50px;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px;
-    gap: 1em;
-    grid-template-areas: 
-    "box1 box1 box2 box3"
-    "box1 box1 box4 box5";
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  width: 100%;
 }
 
-.project-box {
-    background-color: blue;
+.projects-list {
+    margin-bottom: 100px;
 }
+
+.project {
+    background-color: rgb(255, 249, 249);
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px #acacac);
+    transition: all ease-in-out 0.5s;
+}
+
+.project:hover {
+  transform: translateY(-8px) scale(1.02);
+  filter: drop-shadow(8px 12px 32px rgba(111, 111, 111, 0.7));
+  box-shadow: 0 8px 25px rgba(84, 84, 84, 0.25);
+  transform: translateY(-8px) scale(1.02) rotateX(2deg);
+}
+
+.project:hover .project-title {
+    color: darkgreen;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.clickable-box {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+Styling for back to top button.
+*/
+.back-to-top-button {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(16, 130, 52, 1);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 10vw;
+}
+
+.back-to-top-button:hover {
+  background-color: rgb(10, 97, 10);
+} 
