@@ -37,7 +37,7 @@ Opening section styling.
 */
 .opening-image {
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-image: url("../images/about_background.jpg");
   background-size: cover;
   background-position: 25% 25%;
@@ -137,7 +137,7 @@ THIS IS FOR THE EDUCATION / CAREER EXPERIENCE SECTION
 */
 .education-and-career {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
   width: 100%;
 }
@@ -262,6 +262,6 @@ At this point media queries are just for opening image.
 
 @media screen and (min-width: 1501px) and (max-width: 1800px) {
   .opening-image {
-    height: 400px;
+    height: 500px;
   }
 }
